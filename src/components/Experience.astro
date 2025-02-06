@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: "Actualmente",
+        title: "Estudiante - Monitor de programacion, Universidad del Valle Sede Caicedonia",
+        description: "Desarrollo un sistema ERP para gestiones administrativas y académicas de la sede."
+    },
+    {
+        date: "Diciembre 2019",
+        title: "Graduado de bachiller academico, Colegio Liceo Mixto Sevilla",
+        description: "Graduado con honores, de los mejores promedios e icfes de la promoción."
+    }
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+        {
+            EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem {...experience} />
+            </li>
+            ))
+        }
+</ol>
+

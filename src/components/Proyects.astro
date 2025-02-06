@@ -1,0 +1,45 @@
+---
+import Github from "./icons/Github.astro";
+
+
+    const PROJECTS = [
+    
+    {
+
+        title: "Proyecto 1",
+        description: "Descripción del proyecto 1",
+        link: "https://www.google.com",
+        github: "https://www.github.com",
+        image: "https://via.placeholder.com/300x200",
+        tags: ["HTML", "CSS", "JS"]
+
+
+
+    }
+]
+---
+
+{
+
+    PROJECTS.map(({ title, description, link, github, image, tags }) => (
+        <div class="flex flex-col gap-y-16">
+            <article>
+                <h3 class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+                    {title}
+                </h3>
+                <p>
+                    {description}
+                </p>
+                <ul>
+                    {tags.map(tag => (
+                        <li>
+                            {tag}
+                        </li>
+                    ))}
+                </ul>
+                <img src={image} alt={`Captura de la imagen del proyecto ${image}`} />
+            </article>
+        </div>
+
+    ))
+}
