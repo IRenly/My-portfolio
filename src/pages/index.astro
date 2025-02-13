@@ -12,6 +12,9 @@ import SectionContainer from '../components/SectionContainer.astro';
 import Path from '../components/icons/Path.astro';
 import Code from '../components/icons/Code.astro';
 import Proyects from '../components/Proyects.astro';
+import Footer from '../components/Footer.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Me from '../components/icons/Me.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -52,12 +55,23 @@ import Proyects from '../components/Proyects.astro';
 			<Experience />
 		</SectionContainer>
 
-		<SectionContainer id="experiencia" class="py-22">
+		<SectionContainer id="proyectos" class="py-22">
 			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 item-center">
 				<Code class="size-10 "/>
 				Proyectos</h2>
 			<Proyects />
 		</SectionContainer>
+
+		<SectionContainer>
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 item-center">
+				<Me class="size-10 "/>
+				
+				Acerca de mí</h2>
+			<AboutMe />
+    	</SectionContainer>
+		<Footer>
+		</Footer>
+		
 	</main>
 </Layout>
 

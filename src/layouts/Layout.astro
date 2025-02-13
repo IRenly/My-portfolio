@@ -21,7 +21,7 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		
+        
 		<Header/>	
 		<slot />
 	</body>
@@ -39,8 +39,7 @@ const { description, title } = Astro.props;
 		
 		
 	}
-
-	@media (prefers-reduced-motion: reduce) {
+    @media (prefers-reduced-motion: reduce) {
 		html {
 			animation: none !important;
 			transition: none !important;
@@ -267,6 +266,8 @@ body {
     animation: hero-gradient-animation 10s linear infinite alternate;
     background-blend-mode: overlay, normal, normal, normal, normal, normal;
 }
+
+	
 	:root {
 		color-scheme: light dark;
 	}
