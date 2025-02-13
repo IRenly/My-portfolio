@@ -1,7 +1,7 @@
 # Mi portfolio
 
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+[![Open in web](https://github.com/codespaces/badge.svg)](https://rococo-lokum-af1d73.netlify.app/)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
