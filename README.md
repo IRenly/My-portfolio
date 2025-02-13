@@ -1,9 +1,11 @@
-# Mi portfolio
+# 🚀 Mi Portafolio  
 
+[![🌐 Visita mi portafolio](https://img.shields.io/badge/🌍%20Visitar%20portafolio-00A8E8?style=for-the-badge)](https://rococo-lokum-af1d73.netlify.app/)  
 
-[![Link]](https://rococo-lokum-af1d73.netlify.app/)
+🎨 **Bienvenido a mi portafolio** 🎨  
+Aquí encontrarás algunos de mis proyectos y trabajos destacados en desarrollo web y software.  
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🖼️ Vista previa  
+![Mockup de mi portafolio](https://github.com/user-attachments/assets/18647c1c-394e-4d49-9431-11eb5869419c)  
 
-![mockup](https://github.com/user-attachments/assets/18647c1c-394e-4d49-9431-11eb5869419c)
-
+---
