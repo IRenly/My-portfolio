@@ -4,19 +4,32 @@ import Angular from "./icons/Angular.astro";
 import TypeScript from "./icons/TypeScript.astro";
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import ReactIcon from './icons/ReactIcon.astro'
+import TailwindIcon from './icons/TailwindIcon.astro'
 
     const TAGS = {
         ANGULAR: {
             name: "Angular",
-            class: "bg-[#F40851] text-white hover: opacity-90",
+            class: "bg-[#611029] text-white hover: opacity-90",
             icon: Angular,
     
         },
         TYPESCRIPT : {
             name: "TypeScript",
-            class: "bg-[#3178C6] text-white hover:opacity-90",
+            class: "bg-[#112842] text-white hover:opacity-90",
             icon: TypeScript,
 
+        },
+        REACT: {
+        name: "React",
+        class: "bg-[#133d4a] text-white hover:opacity-90",
+        icon: ReactIcon, 
+        },
+
+        TAILWIND: {
+        name: "Tailwind CSS",
+        class: "bg-[#1c354d] text-white hover:opacity-90",
+        icon: TailwindIcon,
         },
 
 
@@ -27,15 +40,23 @@ import LinkButton from "./LinkButton.astro"
     {
 
         title: "Campeones de LoL, estadísticas de Invocador y clasificaciones - LeagueOfGraphs",
-        description: "Analizamos millones de partidas de LoL cada día para obtener estadísticas, emparejamientos, armados y clasificaciones de invocadores. Estadísticas de campeones, popularidad, tasas de victoria, mejores objetos y hechizos recomendados. Clasificación de equipos.",
-        link: "https://www.google.com",
+        description: "Analizamos millones de partidas de LoL cada día para obtener estadísticas, emparejamientos, armados y clasificaciones de invocadores. ",
+        link: "https://www.leagueofgraphs.com/es/summoner/lan/iRenly-GGS",
         github: "https://www.github.com",
         image: "/projects/leagueofgraphs.webp",
         tags: [TAGS.ANGULAR, TAGS.TYPESCRIPT],
 
 
 
-    }
+    },
+    {
+    title: "Pokédex en React - Búsqueda y estadísticas de Pokémon",
+    description: "Una pokedex que permite buscar tus pokemons favoritos, ver sus estadisticas principales, movimientos y mas.",
+    link: "https://pokedex-irenly.vercel.app", 
+    github: "https://github.com/IRenly/Pokedex",
+    image: "/projects/pokeapi.webp", 
+    tags: [TAGS.REACT, TAGS.TAILWIND]
+    },
 ]
 ---
 
@@ -61,7 +82,7 @@ import LinkButton from "./LinkButton.astro"
                 <span
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
                 >
-                    <tag.icon class="size-4" />
+                    <tag.icon class="size-4 self-center" />
                     {tag.name}
                 </span>
                 </li>
